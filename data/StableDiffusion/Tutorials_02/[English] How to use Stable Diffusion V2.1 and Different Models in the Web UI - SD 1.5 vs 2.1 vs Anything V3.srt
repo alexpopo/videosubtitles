@@ -1,0 +1,657 @@
+1
+00:00:01,000 --> 00:00:02,000
+Greetings everyone.
+
+2
+00:00:02,000 --> 00:00:06,480
+In this video, I will show you how you can use
+Stable Diffusion 2.1 with Stable Diffusion
+
+3
+00:00:06,480 --> 00:00:10,240
+WebUI developed by Automatic1111.
+
+4
+00:00:10,240 --> 00:00:15,440
+I am working on a full course that will hopefully
+explain every detail about how to use WebUI
+
+5
+00:00:15,440 --> 00:00:18,000
+to fully utilize Stable Diffusion.
+
+6
+00:00:18,000 --> 00:00:23,760
+So while I was trying to make version 2.1 work
+with the WebUI, I had some difficulties.
+
+7
+00:00:23,760 --> 00:00:30,480
+So let me show you how you can make Stable
+Diffusion 2.1 work with the WebUI.
+
+8
+00:00:30,480 --> 00:00:38,400
+This is the official page of the Stable Diffusion,
+the Stability AI who releases the models.
+
+9
+00:00:38,400 --> 00:00:43,120
+And this is their Hugging Face page
+where they release their models.
+
+10
+00:00:43,120 --> 00:00:48,800
+You see there are several models and Stable
+Diffusion 2.1 and there is Stable Diffusion
+
+11
+00:00:48,800 --> 00:00:50,880
+2.1 base.
+
+12
+00:00:50,880 --> 00:00:54,480
+So you may ask what is the
+difference of them.
+
+13
+00:00:54,480 --> 00:01:07,080
+The base version is 512 by 512 pixels and
+the regular version is 768 and 768.
+
+14
+00:01:07,080 --> 00:01:09,760
+So this is the latest and
+the better version.
+
+15
+00:01:09,760 --> 00:01:14,080
+I am going to use that on the WebUI.
+
+16
+00:01:14,080 --> 00:01:21,440
+So I am clicking Files and Versions and I am
+going to download the file which is ema
+
+17
+00:01:21,440 --> 00:01:22,440
+pruned.
+
+18
+00:01:22,440 --> 00:01:24,440
+You see they are same file size.
+
+19
+00:01:24,440 --> 00:01:31,320
+So you may wonder what is the difference. Ema
+is for further optimizing, further tuning
+
+20
+00:01:31,320 --> 00:01:33,160
+the model.
+
+21
+00:01:33,160 --> 00:01:37,360
+So usually it was larger size,
+but now it is same size.
+
+22
+00:01:37,360 --> 00:01:39,260
+So it is better to use that.
+
+23
+00:01:39,260 --> 00:01:42,040
+You see now I am downloading the file.
+
+24
+00:01:42,040 --> 00:01:44,080
+Okay so the file has been downloaded.
+
+25
+00:01:44,080 --> 00:01:46,840
+Let's go to our Downloads folder quickly.
+
+26
+00:01:46,840 --> 00:01:48,120
+You see the file is here.
+
+27
+00:01:48,120 --> 00:01:51,040
+I am going to cut it.
+
+28
+00:01:51,040 --> 00:01:56,080
+And then where am I going to paste this is: I am
+going to my installation of Stable Diffusion
+
+29
+00:01:56,080 --> 00:02:00,520
+WebUI and from there I am going to Models and from
+there you see there is a Stable Diffusion
+
+30
+00:02:00,520 --> 00:02:01,520
+folder.
+
+31
+00:02:01,520 --> 00:02:02,720
+I am going to paste it there.
+
+32
+00:02:02,720 --> 00:02:03,720
+Are we done yet?
+
+33
+00:02:03,720 --> 00:02:06,000
+No, we are not done yet.
+
+34
+00:02:06,000 --> 00:02:13,120
+In the Stable Diffusion GitHub, there is a
+file, it is inside the configs folder and
+
+35
+00:02:13,120 --> 00:02:15,280
+it is Stable Diffusion folder.
+
+36
+00:02:15,280 --> 00:02:24,360
+You see there are YAML files, this is for configuration
+and for 768 pixels, we are going
+
+37
+00:02:24,360 --> 00:02:30,480
+to use the one ends with the V. Okay,
+this is the file that we need.
+
+38
+00:02:30,480 --> 00:02:32,800
+We are going to click raw.
+
+39
+00:02:32,800 --> 00:02:38,120
+That's where I will put the links of these
+files into the description of the video.
+
+40
+00:02:38,120 --> 00:02:40,200
+And in here we are going to click Save As.
+
+41
+00:02:40,200 --> 00:02:47,040
+We are going to save as this inside our installation,
+we go to our Models folder and in there we
+
+42
+00:02:47,040 --> 00:02:51,280
+are going to Stable Diffusion folder
+and we are going to save it in here.
+
+43
+00:02:51,280 --> 00:02:52,880
+Okay, are we done yet?
+
+44
+00:02:52,880 --> 00:02:53,880
+No.
+
+45
+00:02:53,880 --> 00:02:58,200
+This is saved as txt but its
+extension has to be txt.
+
+46
+00:02:58,200 --> 00:03:02,520
+Its extension has to be YAML.
+
+47
+00:03:02,520 --> 00:03:08,280
+So if you are not able to see the extension
+like this, you need to go to view and then
+
+48
+00:03:08,280 --> 00:03:13,320
+from here you see file name
+and extension is checked.
+
+49
+00:03:13,320 --> 00:03:16,560
+If I uncheck it, it is displayed
+like this and it won't work.
+
+50
+00:03:16,560 --> 00:03:22,960
+You need to check this from here and then you
+need to right click, rename, delete the
+
+51
+00:03:22,960 --> 00:03:30,760
+dot txt, now click. Yes, it will become the correct
+file extension, but we are still not
+
+52
+00:03:30,760 --> 00:03:31,760
+done yet.
+
+53
+00:03:31,760 --> 00:03:37,480
+We need to make these files same name. So I'm
+going to right click and rename, I will copy
+
+54
+00:03:37,480 --> 00:03:38,480
+the name.
+
+55
+00:03:38,480 --> 00:03:45,800
+You can also use Ctrl C, Ctrl V or F2 to rename.
+So when I click F2 it will automatically select
+
+56
+00:03:45,800 --> 00:03:50,000
+and I will do Ctrl V and it
+will be pasted like this.
+
+57
+00:03:50,000 --> 00:03:52,320
+Okay, so now we are ready.
+
+58
+00:03:52,320 --> 00:04:01,240
+There is one final thing which is modifying the
+command line of the BAT file that we are
+
+59
+00:04:01,240 --> 00:04:02,240
+running.
+
+60
+00:04:02,240 --> 00:04:08,760
+So I'm going to open it with right click and open
+with, there is no open with, so I'm going
+
+61
+00:04:08,760 --> 00:04:14,280
+to open it with my text editor
+which is notepad++.
+
+62
+00:04:14,280 --> 00:04:17,600
+You can also open it with notepad.
+
+63
+00:04:17,600 --> 00:04:23,840
+So to open it with notepad, I'm going to open
+a notepad file like this and I'm going to
+
+64
+00:04:23,840 --> 00:04:27,160
+drag and drop it so it is opened
+like this, you can see.
+
+65
+00:04:27,160 --> 00:04:32,600
+And from here we are going to set two command
+line arguments which are like this: let me
+
+66
+00:04:32,600 --> 00:04:39,280
+zoom in, okay, --xformers
+and --no-half.
+
+67
+00:04:39,280 --> 00:04:45,840
+xformers is for boosting performance, if your graphic
+card is not supporting you don't need
+
+68
+00:04:45,840 --> 00:04:52,520
+to put this and this is necessary for the newest
+version, it increases its precision.
+
+69
+00:04:52,520 --> 00:04:56,960
+So if you are wondering what are these command
+line arguments, the command line arguments
+
+70
+00:04:56,960 --> 00:05:04,160
+of automatic1111 is released in its wiki.
+Like this, I will also put this link into
+
+71
+00:05:04,160 --> 00:05:09,200
+the description and you see there are a lot
+of command line arguments and you can see
+
+72
+00:05:09,200 --> 00:05:12,120
+what they are doing.
+
+73
+00:05:12,120 --> 00:05:19,440
+Okay so then we are saving it with file and
+save and we are completely ready right now.
+
+74
+00:05:19,440 --> 00:05:28,800
+We are just clicking webui-user.bat and it will
+start processing the necessary files.
+
+75
+00:05:28,800 --> 00:05:34,080
+Okay the messages displayed here is very important,
+you see I have no error messages here, it
+
+76
+00:05:34,080 --> 00:05:42,680
+says that the config from this yaml is loaded and
+the model file loaded from here, the weights
+
+77
+00:05:42,680 --> 00:05:52,280
+and xformers is applied and also it has loaded
+the, let me see, hypernetwork that I have
+
+78
+00:05:52,280 --> 00:05:54,440
+developed and other things.
+
+79
+00:05:54,440 --> 00:06:01,320
+So I have no errors here, now we open the
+webui like this, it shows the url in here
+
+80
+00:06:01,320 --> 00:06:04,400
+as you can see, you can
+copy and paste that.
+
+81
+00:06:04,400 --> 00:06:10,600
+Okay from this left and top you can change the
+models, so if I set the model like this,
+
+82
+00:06:10,600 --> 00:06:12,840
+let's see what happens.
+
+83
+00:06:12,840 --> 00:06:20,920
+Okay after I have restarted the application, I
+am now able to change the model on runtime.
+
+84
+00:06:20,920 --> 00:06:26,160
+So you see now it is changing the
+model, loaded model on runtime.
+
+85
+00:06:26,160 --> 00:06:36,160
+Okay currently the model is loaded and
+our model is now 2.1 with 768 pixels.
+
+86
+00:06:36,160 --> 00:06:43,040
+Okay so I have made a test with version 1.5.
+I have generated 9 images of futuristic tank
+
+87
+00:06:43,040 --> 00:06:49,600
+artwork with the other all generic keywords and
+with generic keywords of negative prompt.
+
+88
+00:06:49,600 --> 00:06:54,760
+I will put all of these positive and negative
+prompts into the description and the comment
+
+89
+00:06:54,760 --> 00:06:57,040
+section of the video, so don't worry.
+
+90
+00:06:57,040 --> 00:07:06,720
+I have used 20 sampling steps and DPM++ SDE Karras
+as the sampling method. The native resolution
+
+91
+00:07:06,720 --> 00:07:15,480
+of 1.5 is 512 pixels by 512 pixels. So I didn't
+change it. I made the batch count 9 and the
+
+92
+00:07:15,480 --> 00:07:17,520
+seed -1.
+
+93
+00:07:17,520 --> 00:07:22,800
+There is one another thing. Important thing that
+I want to mention is that I have unloaded
+
+94
+00:07:22,800 --> 00:07:29,120
+all of the hypernetworks and embeddings. So this
+is the raw test of the version 1.5, the
+
+95
+00:07:29,120 --> 00:07:32,240
+official version.
+
+96
+00:07:32,240 --> 00:07:44,120
+So each generation took about 15 seconds as you
+can see on RTX 3060, okay and let's check
+
+97
+00:07:44,120 --> 00:07:46,640
+out the images right now.
+
+98
+00:07:46,640 --> 00:07:55,000
+So since they are native resolution 512 pixels,
+their quality decreases when we display them
+
+99
+00:07:55,000 --> 00:07:58,240
+in a bigger screen like this.
+The images like this.
+
+100
+00:07:58,240 --> 00:08:04,200
+I think they are pretty low quality. Since we
+didn't use any artist style, we have only
+
+101
+00:08:04,200 --> 00:08:09,500
+used generic artworks, generic
+keywords, okay.
+
+102
+00:08:09,500 --> 00:08:16,240
+Okay now we are seeing results of version 2.1
+with the exactly same setup, exactly same
+
+103
+00:08:16,240 --> 00:08:23,880
+parameters, only I have changed it to native resolution
+as can be seen here. 768 and I have
+
+104
+00:08:23,880 --> 00:08:31,300
+changed the model on the runtime as can be seen
+here, you see it says that model loaded.
+
+105
+00:08:31,300 --> 00:08:38,080
+Let's check out the images
+it has generated, okay.
+
+106
+00:08:38,080 --> 00:08:45,600
+So you see since the resolution is bigger, it
+is looking better when we do increase in
+
+107
+00:08:45,600 --> 00:08:50,040
+size when displaying, okay.
+
+108
+00:08:50,040 --> 00:08:57,720
+Yeah definitely better than version 1.5 but this
+is because in our prompts we didn't use
+
+109
+00:08:57,720 --> 00:09:06,560
+any of the style of the existing artists, okay.
+We have only used the generic keywords.
+
+110
+00:09:06,560 --> 00:09:10,040
+That is why it is like this.
+
+111
+00:09:10,040 --> 00:09:20,760
+Also the inference time is more than two
+times of the regular 1.5 version, okay.
+
+112
+00:09:20,760 --> 00:09:28,760
+So this time we are seeing analog diffusion results.
+This is another model that is popular
+
+113
+00:09:28,760 --> 00:09:34,000
+so you see I have changed it on the runtime again
+and it takes same about time. With the
+
+114
+00:09:34,000 --> 00:09:43,520
+original model 1.5. The results are like this
+as you can see. I can say that it is not very
+
+115
+00:09:43,520 --> 00:09:52,720
+good by default for generating
+this kind of images, okay.
+
+116
+00:09:52,720 --> 00:09:57,680
+To be able to use analog diffusion I have
+downloaded the file from Hugging Face and
+
+117
+00:09:57,680 --> 00:10:05,000
+I have generated another YAML file as you can
+see here, so where did I get this file?
+
+118
+00:10:05,000 --> 00:10:14,160
+This is the original 1.0 file which you can
+find on this GitHub page. Let me show you,
+
+119
+00:10:14,160 --> 00:10:23,320
+it was, one second, here, yeah it is on this
+page, it was also inside one of my folders.
+
+120
+00:10:23,320 --> 00:10:29,400
+So I have copied pasted there and it is the
+same. I will also put link of this with the
+
+121
+00:10:29,400 --> 00:10:36,560
+same method as I have shown in the beginning,
+you just save it and name it, okay.
+
+122
+00:10:36,560 --> 00:10:44,600
+Now this time we are seeing anything v3 model
+results. I think it is pretty cool when we
+
+123
+00:10:44,600 --> 00:10:54,200
+consider it, it is older version 1.5 based
+model, okay. Let's check it out, so I can
+
+124
+00:10:54,200 --> 00:11:02,400
+say that it is even better than version 2.1
+as you can see, okay, I have used the same
+
+125
+00:11:02,400 --> 00:11:10,480
+setup and same settings, same prompt. So you
+can try different models, it is always the
+
+126
+00:11:10,480 --> 00:11:16,880
+same principle. You download the model, you put
+it inside the model folder and you generate
+
+127
+00:11:16,880 --> 00:11:24,120
+its YAML file, I don't know how this is pronounced,
+so I am pronouncing it like that. You just
+
+128
+00:11:24,120 --> 00:11:30,120
+copy and paste this and rename it like this
+one. So where you can get these models, you
+
+129
+00:11:30,120 --> 00:11:35,880
+can get those models on Hugging Face. So this
+is the official repository. From here I am
+
+130
+00:11:35,880 --> 00:11:42,240
+clicking Stable Diffusion tag, so it is going
+to search all models inside the Hugging Face
+
+131
+00:11:42,240 --> 00:11:52,240
+with Stable Diffusion tag and you see the Arcane
+Diffusion or the anything v3, anything
+
+132
+00:11:52,240 --> 00:11:58,960
+v3 is in the top 4 actually as you can see here.
+So you can also sort by recent updated
+
+133
+00:11:58,960 --> 00:12:05,200
+or you can sort by most likes, it is up to
+you, you can try and test different models
+
+134
+00:12:05,200 --> 00:12:11,800
+from here, just download, copy, paste and change
+the model from where, from here, click this
+
+135
+00:12:11,800 --> 00:12:17,820
+and it will refresh the models inside
+your folder and you are ready to go.
+
+136
+00:12:17,820 --> 00:12:23,040
+I hope you have enjoyed our video, please consider
+liking, sharing, commenting our video
+
+137
+00:12:23,040 --> 00:12:29,680
+to support us. And if you are generous, more
+generous, you can also support us on Patreon
+
+138
+00:12:29,680 --> 00:12:37,800
+that would help us significantly to produce better
+quality videos. So far we have 0 patrons,
+
+139
+00:12:37,800 --> 00:13:01,360
+but you may be the first one. Thank you very
+much, hopefully see you in another video.
+

@@ -1,0 +1,1346 @@
+1
+00:00:01,490 --> 00:00:02,610
+Greetings everyone.
+
+2
+00:00:02,610 --> 00:00:07,020
+In this video, I am going to show you how
+you can install, run and use famous Stable
+
+3
+00:00:07,020 --> 00:00:12,179
+Diffusion web UI developed by Automatic1111
+with two different ways.
+
+4
+00:00:12,179 --> 00:00:16,270
+The first way I am going to show is using
+an open source installer exe just like in
+
+5
+00:00:16,270 --> 00:00:19,240
+traditional applications we install.
+
+6
+00:00:19,240 --> 00:00:22,699
+The second way will be manual installation
+of the web UI.
+
+7
+00:00:22,699 --> 00:00:28,310
+This exe is developed by one of the Stable
+Diffusion community members Leo Mozoloa as
+
+8
+00:00:28,310 --> 00:00:31,640
+can be seen here, this is his profile.
+
+9
+00:00:31,640 --> 00:00:36,360
+Usually I do not trust any exes, however,
+this one is an open source application and
+
+10
+00:00:36,360 --> 00:00:38,590
+you can compile it from the source code.
+
+11
+00:00:38,590 --> 00:00:41,690
+You can also check all of the source code
+on the GitHub repository.
+
+12
+00:00:41,690 --> 00:00:47,780
+This link I will put it in the description
+of the video and we can go inside the folders
+
+13
+00:00:47,780 --> 00:00:53,850
+and see each one of the code it contains.
+
+14
+00:00:53,850 --> 00:00:55,780
+Therefore in this case, we can trust it.
+
+15
+00:00:55,780 --> 00:00:58,030
+So let's begin with downloading the installer
+exe.
+
+16
+00:00:58,030 --> 00:00:59,590
+So where do we download it?
+
+17
+00:00:59,590 --> 00:01:02,010
+We download it from the releases.
+
+18
+00:01:02,010 --> 00:01:05,729
+The releases are displayed at the right as
+you can see here with my mouse.
+
+19
+00:01:05,729 --> 00:01:09,040
+When I click it, I can see all of the releases.
+
+20
+00:01:09,040 --> 00:01:14,260
+Just click the exe and it will start downloading.
+
+21
+00:01:14,260 --> 00:01:16,281
+By the way, you may get a message like this.
+
+22
+00:01:16,281 --> 00:01:20,960
+This exe is not commonly downloaded and may
+be dangerous.
+
+23
+00:01:20,960 --> 00:01:24,250
+If you see that just right click here and
+click.
+
+24
+00:01:24,250 --> 00:01:25,630
+Keep OK.
+
+25
+00:01:25,630 --> 00:01:29,670
+After the download has been completed, just
+go to your downloads folder.
+
+26
+00:01:29,670 --> 00:01:32,680
+Right click the exe and run as administrator.
+
+27
+00:01:32,680 --> 00:01:40,420
+It is important to run as administrator because
+this exe will download and install files.
+
+28
+00:01:40,420 --> 00:01:46,070
+Don't worry about that because it is hosted
+on the GitHub repository.
+
+29
+00:01:46,070 --> 00:01:51,500
+Also this application is now pinned by moderators
+of the stable diffusion community and also
+
+30
+00:01:51,500 --> 00:01:59,920
+I have compiled myself this exe by using advanced
+installer application and I have verified
+
+31
+00:01:59,920 --> 00:02:00,920
+it.
+
+32
+00:02:00,920 --> 00:02:05,350
+This application you can also download trial
+and try, but it is not necessary for you.
+
+33
+00:02:05,350 --> 00:02:08,860
+OK, now this is the installer exe beginning
+screen.
+
+34
+00:02:08,860 --> 00:02:13,489
+We need to install Python and this exe will
+do that as well.
+
+35
+00:02:13,489 --> 00:02:15,360
+So you see there is GIT and Python.
+
+36
+00:02:15,360 --> 00:02:18,660
+I click next.
+
+37
+00:02:18,660 --> 00:02:22,250
+It will do everything automatically for us.
+
+38
+00:02:22,250 --> 00:02:29,379
+If you encounter any problem during following
+this tutorial, please go to our page YouTube
+
+39
+00:02:29,379 --> 00:02:30,379
+page.
+
+40
+00:02:30,379 --> 00:02:35,150
+Click about and here you will see our Discord
+channel.
+
+41
+00:02:35,150 --> 00:02:39,710
+Just click it and join our Discord channel
+and ask me any questions, any problems that
+
+42
+00:02:39,710 --> 00:02:41,720
+you encounter.
+
+43
+00:02:41,720 --> 00:02:47,700
+The Python installation may take some time,
+so be patient with that.
+
+44
+00:02:47,700 --> 00:02:53,519
+OK, so the Python installation and the git
+installation has been completed, so there
+
+45
+00:02:53,519 --> 00:02:55,599
+are several options.
+
+46
+00:02:55,599 --> 00:03:01,990
+You should pick clean install if you are going
+to override your existing or previous install.
+
+47
+00:03:01,990 --> 00:03:04,980
+You should also click this box.
+
+48
+00:03:04,980 --> 00:03:12,650
+Install SD checkpoint 1.5, version 1.5 and
+the newest vae.
+
+49
+00:03:12,650 --> 00:03:18,980
+These are, I am explaining what are these
+in our another video.
+
+50
+00:03:18,980 --> 00:03:25,280
+So if you are wondering what are these version
+1.5 and new vae you can go to our channel.
+
+51
+00:03:25,280 --> 00:03:31,439
+Click playlist and in here you will see stable
+diffusion dreambooth click that playlist and
+
+52
+00:03:31,439 --> 00:03:38,430
+in here you see we have how to use SD 2.1
+custom models on Google Colab or we have how
+
+53
+00:03:38,430 --> 00:03:42,700
+to use stable diffusion 2.1 and different
+models in Web UI.
+
+54
+00:03:42,700 --> 00:03:48,060
+This video actually will explain to you a
+lot regarding what are these.
+
+55
+00:03:48,060 --> 00:03:52,390
+OK, so now I am going to pick the folder where
+I want to install.
+
+56
+00:03:52,390 --> 00:03:56,610
+I want to install it inside my C drive.
+
+57
+00:03:56,610 --> 00:04:00,180
+So I am clicking the three dots here to pick
+the folder.
+
+58
+00:04:00,180 --> 00:04:04,069
+I am clicking C and in here I am clicking
+select.
+
+59
+00:04:04,069 --> 00:04:10,490
+You see now it is selected in the root folder,
+but I need to have another folder.
+
+60
+00:04:10,490 --> 00:04:15,440
+So I am going to type like a1111WebUI.
+
+61
+00:04:15,440 --> 00:04:22,449
+OK and then I am clicking I understand and
+click install.
+
+62
+00:04:22,449 --> 00:04:30,720
+Now it will also download the necessary files
+for me and we don't need to do anything manually.
+
+63
+00:04:30,720 --> 00:04:34,450
+During the download, it doesn't show you any
+messages.
+
+64
+00:04:34,450 --> 00:04:40,280
+However, if you open your task manager with
+right click and click task manager like here,
+
+65
+00:04:40,280 --> 00:04:46,760
+you can go to ethernet and you can see how
+much download your computer is doing.
+
+66
+00:04:46,760 --> 00:04:53,960
+As you see, currently I am downloading like
+100 megabits, which is my maximum bandwidth.
+
+67
+00:04:53,960 --> 00:05:00,610
+OK, after the file files has been downloaded,
+it will quickly install them and it will open
+
+68
+00:05:00,610 --> 00:05:03,140
+the installed folder.
+
+69
+00:05:03,140 --> 00:05:05,270
+As you can see, the folder is like this.
+
+70
+00:05:05,270 --> 00:05:14,210
+Now we have launcher generated by our installer
+and we have the GitHub folder of the official
+
+71
+00:05:14,210 --> 00:05:15,710
+Web UI.
+
+72
+00:05:15,710 --> 00:05:21,630
+It is this one and it has automatically downloaded
+it for us and set it up.
+
+73
+00:05:21,630 --> 00:05:25,500
+And we have the launcher shortcut icon.
+
+74
+00:05:25,500 --> 00:05:30,000
+You can also pin this to taskbar, send it
+to your desktop, whatever you do.
+
+75
+00:05:30,000 --> 00:05:34,780
+For example, I will send it to my desktop,
+send to desktop.
+
+76
+00:05:34,780 --> 00:05:42,400
+And now in my desktop I have it and it has
+been installed.
+
+77
+00:05:42,400 --> 00:05:49,710
+As you can see now, I am clicking finish and
+now we can run it from directly from the launcher.
+
+78
+00:05:49,710 --> 00:05:57,740
+It is asking me asking me to do I want to
+launch the from its shell command?
+
+79
+00:05:57,740 --> 00:05:59,580
+And I said yes.
+
+80
+00:05:59,580 --> 00:06:06,539
+And now the shell command has been run and
+the automatic Web UI launcher has been started
+
+81
+00:06:06,539 --> 00:06:09,190
+so we can do automatic update.
+
+82
+00:06:09,190 --> 00:06:13,340
+As you can see, the arguments are getting
+setted it in the left.
+
+83
+00:06:13,340 --> 00:06:15,970
+Automatic update extensions, clear generated
+images.
+
+84
+00:06:15,970 --> 00:06:21,639
+You shouldn't pick this if you if you know
+what you if you're not sure what is this doing.
+
+85
+00:06:21,639 --> 00:06:22,780
+Low VRAM.
+
+86
+00:06:22,780 --> 00:06:27,919
+If your graphic card is lower than 8GB, then
+you should check this.
+
+87
+00:06:27,919 --> 00:06:32,789
+I have RTX 3060.
+
+88
+00:06:32,789 --> 00:06:39,500
+The RTX 3060 is a super card, super card for
+machine learning tasks.
+
+89
+00:06:39,500 --> 00:06:44,990
+And I already have a video regarding that
+on my channel.
+
+90
+00:06:44,990 --> 00:06:53,380
+If you wonder how powerful it is, you can
+check that video, this one and read the comments
+
+91
+00:06:53,380 --> 00:06:56,490
+that people made.
+
+92
+00:06:56,490 --> 00:06:59,340
+You should also click enable xformers.
+
+93
+00:06:59,340 --> 00:07:08,509
+This enable xformers will improve your speed
+if your graphic card is supporting that.
+
+94
+00:07:08,509 --> 00:07:12,379
+There are also optional checkpoint folders
+and default vae files.
+
+95
+00:07:12,379 --> 00:07:17,210
+If you don't know this yet, you shouldn't
+change them.
+
+96
+00:07:17,210 --> 00:07:23,100
+But if you want to learn more about them,
+just go to our page, click videos.
+
+97
+00:07:23,100 --> 00:07:29,430
+And from here, find how to use stable diffusion
+version 2.1 and different models in the web
+
+98
+00:07:29,430 --> 00:07:30,430
+UI video.
+
+99
+00:07:30,430 --> 00:07:33,510
+This video will help you tremendously to understand
+them.
+
+100
+00:07:33,510 --> 00:07:37,810
+I will also put a link of this into the description
+of the video.
+
+101
+00:07:37,810 --> 00:07:43,580
+There are also additional launch options,
+and you can also type them.
+
+102
+00:07:43,580 --> 00:07:47,150
+Currently only this one is typed.
+
+103
+00:07:47,150 --> 00:07:49,900
+You should also type here.
+
+104
+00:07:49,900 --> 00:07:50,949
+--no-half.
+
+105
+00:07:50,949 --> 00:07:57,000
+This will make it work with stable diffusion
+version 2.1.
+
+106
+00:07:57,000 --> 00:08:03,330
+And I am also explaining that in this video
+as well, how to use stable diffusion 2.1.
+
+107
+00:08:03,330 --> 00:08:04,790
+And that's it.
+
+108
+00:08:04,790 --> 00:08:07,750
+That's all we need to start.
+
+109
+00:08:07,750 --> 00:08:10,450
+And then we click launch web UI.
+
+110
+00:08:10,450 --> 00:08:17,479
+It is generating a virtual environment for
+Python.
+
+111
+00:08:17,479 --> 00:08:21,639
+This is only first time initialization and
+you won't need it.
+
+112
+00:08:21,639 --> 00:08:28,560
+So you see it has installed Python 3.10 version.
+
+113
+00:08:28,560 --> 00:08:34,659
+This is one of the supported versions by the
+web UI 3.10.8.
+
+114
+00:08:34,659 --> 00:08:39,458
+If you have different Python installations
+in your computer, it is fine.
+
+115
+00:08:39,458 --> 00:08:47,700
+It will use the latest installed one because
+I am assuming that the web this installer,
+
+116
+00:08:47,700 --> 00:08:53,860
+installer will set the default Python path
+in the environment variables.
+
+117
+00:08:53,860 --> 00:08:59,890
+Now we are waiting it to install necessary
+other files, for example, torch and torch
+
+118
+00:08:59,890 --> 00:09:00,890
+vision.
+
+119
+00:09:00,890 --> 00:09:07,709
+These are necessary to run the stable diffusion
+model and generate images.
+
+120
+00:09:07,709 --> 00:09:11,670
+OK, so the installation has been completed.
+
+121
+00:09:11,670 --> 00:09:13,800
+You see, I don't have any error messages.
+
+122
+00:09:13,800 --> 00:09:16,050
+This is really important.
+
+123
+00:09:16,050 --> 00:09:24,300
+And then it will automatically start the web
+interface that we can do image generation
+
+124
+00:09:24,300 --> 00:09:27,830
+and image manipulation with stable diffusion.
+
+125
+00:09:27,830 --> 00:09:34,829
+OK, by the way, you need a decent graphic
+card to make it work with many of the features
+
+126
+00:09:34,829 --> 00:09:38,910
+of this AI model.
+
+127
+00:09:38,910 --> 00:09:45,650
+If you don't have such graphic card, then
+on our channel, you can go to playlists.
+
+128
+00:09:45,650 --> 00:09:53,390
+And in here, click the stable diffusion and
+watch these transform your selfie and how
+
+129
+00:09:53,390 --> 00:09:57,780
+to use SD 2.1 custom models on Google Colab.
+
+130
+00:09:57,780 --> 00:10:06,300
+Both of the videos explaining how to use stable
+diffusion on a Google Colab notebook, which
+
+131
+00:10:06,300 --> 00:10:10,040
+uses the GPU provided by the Google.
+
+132
+00:10:10,040 --> 00:10:12,440
+So you don't need a strong GPU.
+
+133
+00:10:12,440 --> 00:10:19,000
+However, in this tutorial, we are going to
+use our own computer's GPU.
+
+134
+00:10:19,000 --> 00:10:24,170
+As you can see, my GPU is already being used
+a lot, but it is fine.
+
+135
+00:10:24,170 --> 00:10:26,220
+Now everything is ready.
+
+136
+00:10:26,220 --> 00:10:33,000
+First, we need to pick the model that we want
+to use, which is this one automatically downloaded
+
+137
+00:10:33,000 --> 00:10:34,840
+and got ready for us.
+
+138
+00:10:34,840 --> 00:10:43,160
+Now we can enter prompts and generate images
+and use all of all other features.
+
+139
+00:10:43,160 --> 00:10:46,490
+So in this video, I will just generate one
+image.
+
+140
+00:10:46,490 --> 00:10:51,649
+Okay, I have entered my prompt as like this
+and my negative prompt.
+
+141
+00:10:51,649 --> 00:11:00,450
+I have selected the sampling sampler as DPM++
+SDE Karras and other options are like default.
+
+142
+00:11:00,450 --> 00:11:06,339
+If you want to learn more about this, please
+watch the other videos in the channel because
+
+143
+00:11:06,339 --> 00:11:10,060
+these are all different things.
+
+144
+00:11:10,060 --> 00:11:12,340
+I will also show one another thing.
+
+145
+00:11:12,340 --> 00:11:17,630
+Just click this image and send to extras and
+in here you can upscale it.
+
+146
+00:11:17,630 --> 00:11:26,240
+The one of the best upscaling algorithm I
+have found is R-ESRGAN 4x+ and let's upscale
+
+147
+00:11:26,240 --> 00:11:29,750
+it to three times and just click generate.
+
+148
+00:11:29,750 --> 00:11:38,490
+This will also download another necessary
+model file for R-ESRGAN 4x+.
+
+149
+00:11:38,490 --> 00:11:40,350
+It is not very big as you can see.
+
+150
+00:11:40,350 --> 00:11:45,480
+Then you will see it is generating the upscaled
+image and it is ready.
+
+151
+00:11:45,480 --> 00:11:49,070
+When we click it now you see it is upscaled.
+
+152
+00:11:49,070 --> 00:11:55,920
+Okay, so this is all for automatic installation
+with using the installer.
+
+153
+00:11:55,920 --> 00:12:03,230
+Now I will show how you can install and run
+everything manually.
+
+154
+00:12:03,230 --> 00:12:04,660
+Okay.
+
+155
+00:12:04,660 --> 00:12:07,670
+The manual installation is tedious as you
+can imagine.
+
+156
+00:12:07,670 --> 00:12:12,810
+First we are opening the GitHub repository
+of the stable diffusion web UI.
+
+157
+00:12:12,810 --> 00:12:15,540
+I will put the link in the description.
+
+158
+00:12:15,540 --> 00:12:20,600
+Then click code and from here click local
+and from here download as zip.
+
+159
+00:12:20,600 --> 00:12:26,130
+This will download the entire folder and it
+is it has been downloaded pretty fast.
+
+160
+00:12:26,130 --> 00:12:30,449
+Cut it and then go to the folder that you
+want to.
+
+161
+00:12:30,449 --> 00:12:31,590
+You want to install it.
+
+162
+00:12:31,590 --> 00:12:42,260
+So I will generate a new folder in C drive
+and let's say webUI2 okay and paste it in
+
+163
+00:12:42,260 --> 00:12:44,250
+there.
+
+164
+00:12:44,250 --> 00:12:47,620
+And in here right click and extract here.
+
+165
+00:12:47,620 --> 00:12:49,769
+This is a zip file.
+
+166
+00:12:49,769 --> 00:12:56,699
+Okay I will cut and everything inside inside
+here and I will paste them inside here.
+
+167
+00:12:56,699 --> 00:13:04,339
+Okay by the way, whenever the source code
+gets updated in this repository, you have
+
+168
+00:13:04,339 --> 00:13:06,459
+to manually update it.
+
+169
+00:13:06,459 --> 00:13:10,519
+It won't be updated automatically.
+
+170
+00:13:10,519 --> 00:13:15,959
+Okay so to make this work, we need to have
+installed python.
+
+171
+00:13:15,959 --> 00:13:18,850
+So how we are going to install python.
+
+172
+00:13:18,850 --> 00:13:26,389
+The suggested python version is python 3.10.6
+and when you click it it will open all of
+
+173
+00:13:26,389 --> 00:13:27,570
+the python versions.
+
+174
+00:13:27,570 --> 00:13:32,720
+Do not download the latest python because
+it won't work.
+
+175
+00:13:32,720 --> 00:13:37,839
+Some of the things are not compatible with
+the latest version.
+
+176
+00:13:37,839 --> 00:13:54,320
+So from here we go to we are going to search
+control-F 3.10.6 here and from here we go
+
+177
+00:13:54,320 --> 00:14:00,779
+to files and from here click windows installer
+64 bit it will get installed.
+
+178
+00:14:00,779 --> 00:14:04,760
+Currently I have this installed but we can
+reinstall it.
+
+179
+00:14:04,760 --> 00:14:06,630
+I am going to show in folder right.
+
+180
+00:14:06,630 --> 00:14:10,769
+Click and run as administrator.
+
+181
+00:14:10,769 --> 00:14:17,449
+Okay and in here you see there are install
+now and customize installation and add python
+
+182
+00:14:17,449 --> 00:14:19,560
+to add python to path.
+
+183
+00:14:19,560 --> 00:14:20,680
+This is important.
+
+184
+00:14:20,680 --> 00:14:23,500
+If you don't make this, it won't work.
+
+185
+00:14:23,500 --> 00:14:25,520
+Okay I will click customization.
+
+186
+00:14:25,520 --> 00:14:27,089
+Everything is selected next.
+
+187
+00:14:27,089 --> 00:14:30,269
+Then you can pick the folder where you want
+to install.
+
+188
+00:14:30,269 --> 00:14:40,269
+I want to install it in C drive with version
+2 like this and you can also click precompile.
+
+189
+00:14:40,269 --> 00:14:42,600
+Okay this should be enough sufficient.
+
+190
+00:14:42,600 --> 00:14:43,910
+Click install.
+
+191
+00:14:43,910 --> 00:14:49,970
+Okay you see I have an error because another
+version of this product is already installed.
+
+192
+00:14:49,970 --> 00:14:58,790
+Okay I am uninstalling the pythons version
+3.11.0 and 3.10.8.
+
+193
+00:14:58,790 --> 00:15:04,660
+This is the one that has been installed by
+the automatic installer and then we will manually
+
+194
+00:15:04,660 --> 00:15:09,079
+install this one to demonstrate.
+
+195
+00:15:09,079 --> 00:15:17,019
+Okay both python versions has been uninstalled,
+so let's install 3.10.8 version.
+
+196
+00:15:17,019 --> 00:15:21,089
+Okay which is here I am clicking it I am clicking
+the download.
+
+197
+00:15:21,089 --> 00:15:29,889
+I will also put a link of this into the description
+show in folder right click run as administrator.
+
+198
+00:15:29,889 --> 00:15:34,490
+Okay you add python exe to path customize
+installation.
+
+199
+00:15:34,490 --> 00:15:37,110
+Next, let's pick the folder to install.
+
+200
+00:15:37,110 --> 00:15:41,430
+Okay let's name it like this: precompile.
+
+201
+00:15:41,430 --> 00:15:42,670
+Okay install.
+
+202
+00:15:42,670 --> 00:15:45,290
+Okay now getting installed.
+
+203
+00:15:45,290 --> 00:15:53,250
+Hopefully it won't cause any errors.
+
+204
+00:15:53,250 --> 00:15:55,899
+Okay the python has been installed successfully.
+
+205
+00:15:55,899 --> 00:15:58,589
+Let's first verify it.
+
+206
+00:15:58,589 --> 00:16:02,449
+Open a command line window with typing cmd.
+
+207
+00:16:02,449 --> 00:16:08,320
+Like this command, prompt, enter and in here
+just type python.
+
+208
+00:16:08,320 --> 00:16:19,459
+Okay you see my default python is 3.9.9 therefore,
+it may not work and it will not work actually.
+
+209
+00:16:19,459 --> 00:16:22,800
+So I have to fix it from environment variables.
+
+210
+00:16:22,800 --> 00:16:29,089
+If you if you didn't have any installed python,
+then it should automatically work for you.
+
+211
+00:16:29,089 --> 00:16:38,880
+So I am going to add I'm going to add it to
+my edit path and in here I am going to move
+
+212
+00:16:38,880 --> 00:16:41,900
+I am going to add my new installation.
+
+213
+00:16:41,900 --> 00:16:47,960
+Actually it is on the top so probably I need
+to change the path here.
+
+214
+00:16:47,960 --> 00:16:53,870
+Okay let's see the newest installation is
+not here, so click new and from here.
+
+215
+00:16:53,870 --> 00:16:55,860
+Click browse in here.
+
+216
+00:16:55,860 --> 00:16:58,470
+Go to C drive where we installed it.
+
+217
+00:16:58,470 --> 00:17:02,569
+We installed it in let's see python.
+
+218
+00:17:02,569 --> 00:17:06,720
+Yeah, in here first selected.
+
+219
+00:17:06,720 --> 00:17:09,780
+Move it to the top.
+
+220
+00:17:09,780 --> 00:17:20,839
+Okay then I will just edit this actually the
+bottom one.
+
+221
+00:17:20,839 --> 00:17:27,299
+Okay for editing, click edit and click browse
+and go.
+
+222
+00:17:27,299 --> 00:17:37,590
+Okay in here python and in here I'm selecting
+scripts okay, click okay, click okay and you
+
+223
+00:17:37,590 --> 00:17:43,380
+need to open another cmd command prompt window
+type python.
+
+224
+00:17:43,380 --> 00:17:51,570
+Okay now you see my default python is 3.10.8.
+
+225
+00:17:51,570 --> 00:17:55,380
+Now we are ready to move to the next step.
+
+226
+00:17:55,380 --> 00:18:02,890
+So I am entering the folder where I have extracted
+the GitHub files and in here first I need
+
+227
+00:18:02,890 --> 00:18:05,960
+to edit web user.bat file.
+
+228
+00:18:05,960 --> 00:18:11,990
+Right click it and click edit I need to add
+2 command line arguments.
+
+229
+00:18:11,990 --> 00:18:21,100
+The arguments we need to add are --xformers
+space character and --no-half and then click
+
+230
+00:18:21,100 --> 00:18:22,100
+save.
+
+231
+00:18:22,100 --> 00:18:26,539
+Okay now we are ready to launch the interface.
+
+232
+00:18:26,539 --> 00:18:34,799
+We are going to webui-user.bat and it will
+generate first a virtual environment as same
+
+233
+00:18:34,799 --> 00:18:38,460
+as in the previous methodology.
+
+234
+00:18:38,460 --> 00:18:44,070
+Okay the installation has been completed,
+but we have an error.
+
+235
+00:18:44,070 --> 00:18:50,100
+The error is that it says that we don't have
+any model to run the stable diffusion.
+
+236
+00:18:50,100 --> 00:18:56,760
+So first we need to download and install our
+model.
+
+237
+00:18:56,760 --> 00:19:03,400
+As I have already said multiple times, I am
+fully explaining different models and how
+
+238
+00:19:03,400 --> 00:19:09,080
+to use them with the web ui in this tutorial
+video.
+
+239
+00:19:09,080 --> 00:19:18,470
+So from here I am going to click official
+repository actually not official repository.
+
+240
+00:19:18,470 --> 00:19:26,600
+So let's download not the official model,
+but let's download anything v3 model: this
+
+241
+00:19:26,600 --> 00:19:34,530
+is a very famous model and from here I am
+going to click anything v3.
+
+242
+00:19:34,530 --> 00:19:36,840
+I will use the pruned file.
+
+243
+00:19:36,840 --> 00:19:44,870
+Okay, just download it alternatively, you
+can also download the official version just
+
+244
+00:19:44,870 --> 00:19:46,260
+click stable diffusion.
+
+245
+00:19:46,260 --> 00:19:48,809
+Actually, this could be hard.
+
+246
+00:19:48,809 --> 00:19:57,430
+So in google, just type stable diffusion version
+1.5 if you type it to the google, it will
+
+247
+00:19:57,430 --> 00:19:59,850
+bring you the hugging face page.
+
+248
+00:19:59,850 --> 00:20:12,309
+From here and from here click files and versions
+and from here click v1-5-pruned.ckpt and from
+
+249
+00:20:12,309 --> 00:20:17,810
+here click download it will get downloaded
+like this as you can see.
+
+250
+00:20:17,810 --> 00:20:24,590
+Okay, once downloads has been completed, go
+to your downloads folder, select the files,
+
+251
+00:20:24,590 --> 00:20:34,180
+click cut, and then go back to the installation
+folder of the web ui and in here go to models
+
+252
+00:20:34,180 --> 00:20:42,039
+folder and in here go to stable diffusion
+folder and this is the place where you are
+
+253
+00:20:42,039 --> 00:20:46,670
+going to paste, put your full models that
+you have downloaded.
+
+254
+00:20:46,670 --> 00:20:51,990
+I am explaining everything in the other video
+that I have mentioned and then go back to
+
+255
+00:20:51,990 --> 00:20:55,809
+web user dot file.
+
+256
+00:20:55,809 --> 00:21:02,159
+Okay, I'm closing the other command windows
+and this time it will be much faster because
+
+257
+00:21:02,159 --> 00:21:04,549
+the initial step has been completed.
+
+258
+00:21:04,549 --> 00:21:10,940
+You see it is launching the web ui with the
+arguments minus minus xformers and minus minus
+
+259
+00:21:10,940 --> 00:21:13,600
+no half.
+
+260
+00:21:13,600 --> 00:21:20,409
+Okay, okay so it is ready, but you see it
+didn't open me any pages.
+
+261
+00:21:20,409 --> 00:21:25,180
+So you need to type this into your browser
+or you can copy and paste it.
+
+262
+00:21:25,180 --> 00:21:29,779
+I am selecting it with my mouse right click
+actually right click not working.
+
+263
+00:21:29,779 --> 00:21:35,500
+You need to select it with your mouse, then
+control-c it will copy it and then you need
+
+264
+00:21:35,500 --> 00:21:40,029
+to paste it into your browser and it will
+get opened.
+
+265
+00:21:40,029 --> 00:21:42,300
+Currently it is running.
+
+266
+00:21:42,300 --> 00:21:46,700
+Let's generate a new image with the same prompt.
+
+267
+00:21:46,700 --> 00:21:51,220
+I will post this prompt into the comments
+section of the video.
+
+268
+00:21:51,220 --> 00:22:01,360
+I am selecting DPM++ SDE Karras this is the
+sampling method and this is one of the good
+
+269
+00:22:01,360 --> 00:22:02,789
+ones that I have found.
+
+270
+00:22:02,789 --> 00:22:10,120
+Then click, generate and and you you are seeing
+that it is generating each step.
+
+271
+00:22:10,120 --> 00:22:12,910
+You will see the progress here and also here.
+
+272
+00:22:12,910 --> 00:22:19,049
+Okay, the image has been generated, but you
+see this is pretty different than the first
+
+273
+00:22:19,049 --> 00:22:20,190
+example.
+
+274
+00:22:20,190 --> 00:22:21,340
+Why?
+
+275
+00:22:21,340 --> 00:22:25,330
+Because currently it is using anything v3
+model.
+
+276
+00:22:25,330 --> 00:22:32,359
+However, in the previous example, we were
+using version 1.5 which was the official version.
+
+277
+00:22:32,359 --> 00:22:38,940
+If I change back model to that version and
+generate another image, let's see what we
+
+278
+00:22:38,940 --> 00:22:45,490
+are going to get and this is what we get with
+the official 1.5 version model.
+
+279
+00:22:45,490 --> 00:22:48,220
+Okay, this is all for today.
+
+280
+00:22:48,220 --> 00:22:55,289
+Please subscribe our channel and follow our
+videos because I am planning to make a full
+
+281
+00:22:55,289 --> 00:23:01,720
+course regarding stable diffusion with explaining
+pretty much everything about it.
+
+282
+00:23:01,720 --> 00:23:06,630
+You can see it in our playlist in the stable
+diffusion.
+
+283
+00:23:06,630 --> 00:23:09,470
+I will put them with an order.
+
+284
+00:23:09,470 --> 00:23:16,549
+I am generating videos both for Google Colab
+and that will run on your computer.
+
+285
+00:23:16,549 --> 00:23:20,140
+To make it run on your computer, you need
+a decent graphic card.
+
+286
+00:23:20,140 --> 00:23:29,830
+You see, even my RTX 3060 is struggling a
+little bit.
+
+287
+00:23:29,830 --> 00:23:35,630
+So therefore, if you don't have a strong GPU
+you can use Google Colab or other services,
+
+288
+00:23:35,630 --> 00:23:41,590
+but they are a little bit harder to use than
+installing on your computer.
+
+289
+00:23:41,590 --> 00:23:50,070
+Please also consider liking sharing this video,
+subscribing, and also supporting us on patreon.
+
+290
+00:23:50,070 --> 00:23:55,680
+This will enable us to continue produce more
+high quality videos in the future.
+
+291
+00:23:55,680 --> 00:24:01,049
+Currently, we still have zero patrons, but
+I am hoping that you will be the first one.
+
+292
+00:24:01,049 --> 00:24:02,799
+Hopefully see you in another video.
+

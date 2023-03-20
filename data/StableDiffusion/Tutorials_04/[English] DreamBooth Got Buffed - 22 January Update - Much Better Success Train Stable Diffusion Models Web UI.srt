@@ -1,0 +1,560 @@
+1
+00:00:00,000 --> 00:00:05,540
+Greetings everyone. In this video I will show
+you the newest update of DreamBooth extension
+
+2
+00:00:05,540 --> 00:00:12,180
+of Automatic1111 web UI. The new update brought
+huge improvement to teach our subjects into
+
+3
+00:00:12,180 --> 00:00:17,380
+Stable Diffusion models. It is like 10x better
+than before. This will be a short video of
+
+4
+00:00:17,380 --> 00:00:21,980
+best settings. Therefore, if you are interested
+in a detailed tutorial, please first watch
+
+5
+00:00:21,980 --> 00:00:25,660
+my very thorough DreamBooth tutorial.
+Let me show you it.
+
+6
+00:00:25,660 --> 00:00:30,740
+This is the video that you need to watch. So
+let me show you which commit, which version
+
+7
+00:00:30,740 --> 00:00:35,420
+of DreamBooth and SD web UI I am using. This
+is the DreamBooth revision and this is the
+
+8
+00:00:35,420 --> 00:00:41,020
+SD web UI revision. To use these specific versions,
+just open the Git Bash. You need
+
+9
+00:00:41,020 --> 00:00:47,120
+to install it from Google and then move to
+your folder installation folder, like this
+
+10
+00:00:47,120 --> 00:00:56,320
+CD and drag and drop. Then use git checkout
+command like this and paste the commit ID.
+
+11
+00:00:56,320 --> 00:01:03,080
+And now it will checkout to that version. With
+the newest update, you are able to obtain
+
+12
+00:01:03,080 --> 00:01:08,120
+very highly stylized and very good results
+with a very simple command like this. You
+
+13
+00:01:08,120 --> 00:01:16,900
+see, I just added Tomer Hanuka to my token, ohwx
+and, as usually, I am using the negative
+
+14
+00:01:16,900 --> 00:01:22,400
+prompt and it is able to stylize it very well.
+This is the data set I have used. It is not
+
+15
+00:01:22,400 --> 00:01:28,580
+great, but it is not also very bad. All of the
+backgrounds and the clothes are different,
+
+16
+00:01:28,580 --> 00:01:35,260
+different angles. Okay, now let me show you the
+best settings. This is not necessary, but
+
+17
+00:01:35,260 --> 00:01:40,660
+make sure that you have selected the version 1.5,
+pruned ckpt here, or whatever the model
+
+18
+00:01:40,660 --> 00:01:49,980
+that you want to train on. Go to the DreamBooth tab
+in the create menu. Give a name like tutorial.
+
+19
+00:01:49,980 --> 00:01:55,860
+Now we are checking whether that 512 pixel model
+or not. Source checkpoint this is the
+
+20
+00:01:55,860 --> 00:02:02,000
+important one: version 1.5 pruned and create
+model. You should get a message like this:
+
+21
+00:02:02,000 --> 00:02:08,120
+checkpoint successfully extracted to our working
+folders. Go to the settings tab and in here
+
+22
+00:02:08,120 --> 00:02:13,580
+click performance wizard first. There is also
+new LoRA version. However, I couldn't get
+
+23
+00:02:13,580 --> 00:02:18,460
+good results with LoRA yet. Hopefully I will
+make another new video for LoRA, so I am not
+
+24
+00:02:18,460 --> 00:02:25,660
+picking it. Do not check this checkbox. It is
+usually not working. By the way, with the
+
+25
+00:02:25,660 --> 00:02:31,820
+new model, with the new update, it is working
+much faster than before. In terms of number
+
+26
+00:02:31,820 --> 00:02:38,780
+of epochs required to train your subject. For
+example, I was able to teach my face with
+
+27
+00:02:38,780 --> 00:02:45,940
+just 30 epochs, unlike previously I was using
+like 150 epochs. So still, you can set this
+
+28
+00:02:45,940 --> 00:02:52,580
+as 200, set this as 0, set this as 5 because
+it is getting overtrained very quickly. With
+
+29
+00:02:52,580 --> 00:02:59,260
+the newest update I think they have fixed a lot
+of things and now this is not automatically
+
+30
+00:02:59,260 --> 00:03:05,940
+checking. Checked for me. I have RTX 3060.
+When you check this it will actually reduce
+
+31
+00:03:05,940 --> 00:03:12,100
+the memory usage, but it will slow down your
+process and this is also for saving VRAM.
+
+32
+00:03:12,100 --> 00:03:16,460
+So this is constant with warmup. It is fine.
+I didn't change the learning rate. It works
+
+33
+00:03:16,460 --> 00:03:23,060
+fine. Do not check this box and do not check
+this checkbox as well. Here, this is very
+
+34
+00:03:23,060 --> 00:03:30,460
+important to understand whether you started overtraining
+or not. So photo of ohwx man
+
+35
+00:03:30,460 --> 00:03:37,900
+by Tomer Hanuka. The ohwx is our token. It
+is a very rare token and man is class token.
+
+36
+00:03:37,900 --> 00:03:44,140
+Then in the advanced tab, if you have more than
+12GB VRAM, you can check this "use EMA".
+
+37
+00:03:44,140 --> 00:03:49,060
+It will improve your success. Use 8bit Adam.
+We have 16bf and xformers. By the way, let me also
+
+38
+00:03:49,060 --> 00:03:55,460
+show you the command line arguments I used. The
+only command line argument I used is 
+
+39
+00:03:55,460 --> 00:04:00,020
+--xformers, and I am also using disable
+safe unpicked. But this is not necessary.
+
+40
+00:04:00,020 --> 00:04:09,620
+I didn't add --no-half, because this
+is necessary for SD version 2.1. This will
+
+41
+00:04:09,620 --> 00:04:16,820
+slow down your image generation and also training,
+but this is all only necessary for SD 2.1.
+
+42
+00:04:16,820 --> 00:04:23,420
+So if you are not working with SD 2.1 version, do
+not add this. It will slow down your process.
+
+43
+00:04:23,420 --> 00:04:27,340
+I am checking cache latents. This will speed
+up the training but it will increase the
+
+44
+00:04:27,340 --> 00:04:33,060
+VRAM usage. Since I have 12GB, it works fine.
+I am also training UNET. If you don't have
+
+45
+00:04:33,060 --> 00:04:40,900
+enough VRAM then you should uncheck this. Okay,
+It gave an error when I unchecked it.
+
+46
+00:04:40,900 --> 00:04:46,900
+I think they will fix it. So I am leaving these
+default. There is a new settings, as
+
+47
+00:04:46,900 --> 00:04:53,380
+you can see, the Weight Decay AdamW optimizer.
+It says that this will more generalize your
+
+48
+00:04:53,380 --> 00:04:58,020
+images as you make this number bigger. If you
+want your subject to be as close much
+
+49
+00:04:58,020 --> 00:05:05,180
+as to you. By default it is 0.01. I did left
+it default and it worked very well. And the
+
+50
+00:05:05,180 --> 00:05:10,180
+pad tokens: these are for when you are using the
+[filewords] and shuffle tags, image captions
+
+51
+00:05:10,180 --> 00:05:15,820
+related. There's also one new, another option:
+prior loss. I asked this to the developer
+
+52
+00:05:15,820 --> 00:05:22,220
+of the extension developer. The answer of the developer
+is this: As you can see, Scale prior loss
+
+53
+00:05:22,220 --> 00:05:26,100
+ loss, decrease the prior loss weight as
+training progress. When you enable it, you
+
+54
+00:05:26,100 --> 00:05:30,460
+get a "minimum prior loss" setting and 
+"prior loss target". The target is: at what epoch
+
+55
+00:05:30,460 --> 00:05:37,660
+should the prior loss weight reach the minimum.
+He also commented as not sure if it matters
+
+56
+00:05:37,660 --> 00:05:42,700
+or helps, but it will stand to the reason that
+as we train our model, we want the weight
+
+57
+00:05:42,700 --> 00:05:46,940
+of the class images to be lower than that the
+instance images, as the model should already
+
+58
+00:05:46,940 --> 00:05:52,540
+better know the subject. I made test with enabling
+this and disabling it. I think when this is
+
+59
+00:05:52,540 --> 00:05:57,540
+not enabled, it worked better for me, but
+it is up to you to test it. Then we go to
+
+60
+00:05:57,540 --> 00:06:03,780
+the concept. Okay, In the directories, as usual,
+we are setting our first training set
+
+61
+00:06:03,780 --> 00:06:08,740
+directory. This is my training set directory.
+So I copied it, I pasted it, then set it
+
+62
+00:06:08,740 --> 00:06:14,620
+set a new. If you have prior classification images,
+like I have, you can give it its directory
+
+63
+00:06:14,620 --> 00:06:21,340
+or you can give a new directory like this.
+Okay, Now [filewords]. People are getting very
+
+64
+00:06:21,340 --> 00:06:26,380
+confused with this. Let I will explain to you
+what is this actually in this video. Let's
+
+65
+00:06:26,380 --> 00:06:34,060
+say you have typed as ohwx here and you
+have type of [filewords] here. So this will
+
+66
+00:06:34,060 --> 00:06:39,100
+become like this when it is processing. For example,
+let's say I am using image captions,
+
+67
+00:06:39,100 --> 00:06:46,720
+like in this example, and the caption of the
+image is like this. Okay, Let me show you.
+
+68
+00:06:46,720 --> 00:06:54,100
+So when I use the configuration like this,
+it will append the instance token I
+
+69
+00:06:54,100 --> 00:07:00,500
+have written in the [filewords] to the beginning.
+Then it will read the captions here.
+
+70
+00:07:00,500 --> 00:07:05,100
+So the final prompt will be like this. If
+I also add a word here, let's say example
+
+71
+00:07:05,100 --> 00:07:14,100
+word, then this example word will be appended
+here. So this is also equal to using like
+
+72
+00:07:14,100 --> 00:07:19,580
+this. When you use it like this, it will become
+actually exact exactly like this. So this
+
+73
+00:07:19,580 --> 00:07:24,940
+is how [filewords] and instance token works.
+I am not using any [filewords]
+
+74
+00:07:24,940 --> 00:07:32,540
+and image caption. So I am setting as
+the instance token as ohwx man. So
+
+75
+00:07:32,540 --> 00:07:39,660
+the ohwx is our token and the man is our
+class. In this video I have very clearly
+
+76
+00:07:39,660 --> 00:07:45,020
+and very detailedly and very technically explained 
+how the Stable Diffusion works, how
+
+77
+00:07:45,020 --> 00:07:53,140
+it is composed by vectors and different tokens.
+For class prompt, we are using photo
+
+78
+00:07:53,140 --> 00:08:01,380
+of man and for sample image prompt: we
+are using photo of ohwx man as you can
+
+79
+00:08:01,380 --> 00:08:10,220
+see, then, class images per instance,
+I have used 48 images and in
+
+80
+00:08:10,220 --> 00:08:14,520
+the saving tab, make sure that you are generating
+a ckpt file and saving during training
+
+81
+00:08:14,520 --> 00:08:21,860
+because, when you see it is over training,
+you will see use the certain checkpoints
+
+82
+00:08:21,860 --> 00:08:31,300
+and then click save settings. Okay, I think
+everything is pretty much ready and. Just
+
+83
+00:08:31,300 --> 00:08:36,780
+hit train tab and it will start generating
+the classification images and after that
+
+84
+00:08:36,780 --> 00:08:42,140
+it will start training the model. You see,
+the classification images are very weird
+
+85
+00:08:42,140 --> 00:08:48,540
+and. If you handpick the good classification
+images then it may improve your success.
+
+86
+00:08:48,540 --> 00:08:53,500
+It is up to you to test. But I didn't touch
+the classification images actually. I just
+
+87
+00:08:53,500 --> 00:08:59,060
+used whatever it generated. Okay, here
+the training samples generated during
+
+88
+00:08:59,060 --> 00:09:05,700
+my training. So, as you can see, even in the
+10th epoch this is the I have saved preview
+
+89
+00:09:05,700 --> 00:09:12,520
+images and checkpoints every 10 epoch. It is
+already learned a very good my subject,
+
+90
+00:09:12,520 --> 00:09:19,140
+my face. And after 30 epochs we are losing
+the styling with by using the sanity.
+
+91
+00:09:19,140 --> 00:09:24,520
+As you can see, in the sanity we used by Tomer
+Hanuka style. So I decided to do my
+
+92
+00:09:24,520 --> 00:09:31,860
+tests on the just the 30 epochs and it worked
+very well, as I have shown you. Also,
+
+93
+00:09:31,860 --> 00:09:38,740
+when we analyze that you see, now we don't
+even need to increase the prompt emphasis
+
+94
+00:09:38,740 --> 00:09:46,300
+of our token, just using, like this, 1.1 emphasis,
+and it is working, working very well.
+
+95
+00:09:46,300 --> 00:09:56,460
+And with 30 step and with 720 steps training,
+it is able to fully stylize my face and able
+
+96
+00:09:56,460 --> 00:10:01,820
+to generate very beautiful images. This is different
+than the previous trainings of the
+
+97
+00:10:01,820 --> 00:10:07,620
+DreamBooth extension of Automatic1111. So
+therefore, now, the things are really
+
+98
+00:10:07,620 --> 00:10:13,060
+different, really improved I think what they
+did is now they are properly able to keep
+
+99
+00:10:13,060 --> 00:10:19,100
+up the prior loss and previously they were
+not able to keep that. So now, with a very
+
+100
+00:10:19,100 --> 00:10:27,140
+few number of epochs, the model is able to
+learn our subject very well. You still
+
+101
+00:10:27,140 --> 00:10:34,180
+can do a test of different epochs, so to
+do that, you just need to use the X/Y
+
+102
+00:10:34,180 --> 00:10:41,260
+plot and in here you can give the checkpoint
+names. You see it's showing all of the names
+
+103
+00:10:41,260 --> 00:10:46,300
+like this and just delete the ones that you don't
+want to test. And, the Y plot. I suggest
+
+104
+00:10:46,300 --> 00:10:52,620
+you to test CFG value. You can test 8, 7
+9, 10, 11, 12 and whatever
+
+105
+00:10:52,620 --> 00:10:59,540
+you want. And when you do test you can see
+which epoch is working best for you. And I
+
+106
+00:10:59,540 --> 00:11:07,140
+am really happy with the newest update because
+it's certainly improved the training
+
+107
+00:11:07,140 --> 00:11:13,500
+quality. So check out the newest DreamBooth
+extension. Thank you very much for watching.
+
+108
+00:11:13,500 --> 00:11:19,260
+Please like, subscribe and leave a comment.
+You can join our discord channel and discuss
+
+109
+00:11:19,260 --> 00:11:24,300
+everything and ask any questions. Go to the
+about tab of our YouTube channel and in the
+
+110
+00:11:24,300 --> 00:11:28,820
+bottom you will see official discord channel link.
+And if you support us on Patreon, I would
+
+111
+00:11:28,820 --> 00:11:34,460
+appreciate very much. This is keeping me to
+do more research and produce better quality
+
+112
+00:11:34,460 --> 00:11:37,780
+videos. Hopefully see you
+later in another video.
+
